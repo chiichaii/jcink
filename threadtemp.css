@@ -15,16 +15,17 @@
   line-height: 1.6;
 }
 
-.content b.b-1 {
-  background: rgba(255, 0, 0, 0.5); /* Red with 50% opacity for testing */
+.content b {
+  background: rgba(var(--mgrgb1), 0.5); /* Default highlight color */
+  padding: 0 5px;
 }
 
 .content b.b-2 {
-  background: rgba(0, 255, 0, 0.5); /* Green with 50% opacity for testing */
+  background: rgba(var(--mgrgb2), 0.5); /* Group 2 highlight color */
 }
 
 .content b.b-3 {
-  background: rgba(0, 0, 255, 0.5); /* Blue with 50% opacity for testing */
+  background: rgba(var(--mgrgb3), 0.5); /* Group 3 highlight color */
 }
 
 .content p {
