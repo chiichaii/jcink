@@ -4,7 +4,7 @@
   border: 1px solid rgb(var(--mgrgb1)); /* Light mode border default */
   padding: 40px;
   margin: 0 auto; /* Center the template */
-  background: rgb(255, 255, 255); /* Light background */
+  background: transparent;
 }
 
 /* Dark Mode Support */
