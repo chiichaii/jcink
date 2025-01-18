@@ -14,7 +14,6 @@ body {
   padding: 40px;
   margin-left: 15px;
   margin-right: 15px;
-  box-sizing: border-box; /* To include padding in the width calculation */
 }
 
 .content {
