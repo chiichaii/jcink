@@ -1,15 +1,17 @@
-/* Center the entire thread-template on the page */
 body {
+  margin: 0;
+}
+
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full viewport height */
-  margin: 0;
+  min-height: 100vh; /* Use min-height instead of height */
 }
 
 .thread-template {
   width: auto;
-  display: inline-block;
+  display: block; /* Change from inline-block */
   border: 1px solid black;
   padding: 40px;
   margin-left: 15px;
@@ -31,15 +33,15 @@ body {
 }
 
 .content b.b-1 {
-  background: rgba(var(--mgrgb1), 0.3); /* Group 1 color */
+  background: rgba(var(--mgrgb1), 0.3);
 }
 
 .content b.b-2 {
-  background: rgba(var(--mgrgb2), 0.3); /* Group 2 color */
+  background: rgba(var(--mgrgb2), 0.3);
 }
 
 .content b.b-3 {
-  background: rgba(var(--mgrgb3), 0.3); /* Group 3 color */
+  background: rgba(var(--mgrgb3), 0.3);
 }
 
 .content p {
@@ -56,5 +58,5 @@ body {
 .link-text a {
   text-decoration: none;
   color: rgb(var(--mgrgb2)); 
-  border-bottom: 1px dashed rgba(var(--mgrgb2), 0.7); /* Dashed underline with Group 2 color */
+  border-bottom: 1px dashed rgba(var(--mgrgb2), 0.7);
 }
