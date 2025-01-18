@@ -1,12 +1,3 @@
-/* Center the entire thread-template on the page */
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Full viewport height */
-  margin: 0;
-}
-
 .thread-template {
   width: auto;
   display: inline-block;
