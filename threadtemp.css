@@ -8,7 +8,7 @@
 }
 
 .content {
-  font-family: 'Ibarra Real Nova', serif;
+  font-family: 'Libre Baskerville', serif;
   font-size: 13px;
   text-align: justify;
   margin: 0;
@@ -38,7 +38,7 @@
 }
 
 .link-text {
-  font-family: 'Ibarra Real Nova', serif;
+  font-family: 'Libre Baskerville', serif;
   font-size: 13px;
   text-align: center;
   margin-top: 20px;
@@ -47,7 +47,7 @@
 .link-text a {
   text-decoration: none; /* Remove default underline */
   color: #000000; /* Default link color */
-  border-bottom: 2px dashed rgba(var(--mgrgb2), 0.3); /* Dashed underline with Group 2 color */
+  border-bottom: 1px dashed rgba(var(--mgrgb2), 0.3); /* Dashed underline with Group 2 color */
 }
 
 }
