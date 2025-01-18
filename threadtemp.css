@@ -2,7 +2,7 @@
   width: 500px;
   display: inline-block;
   border: 1px solid black;
-  padding: 40px;
+  padding: 50px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -46,7 +46,6 @@
 
 .link-text a {
   text-decoration: none; /* Remove default underline */
-  color: #000000; /* Default link color */
   border-bottom: 1px dashed rgba(var(--mgrgb2), 0.3); /* Dashed underline with Group 2 color */
 }
 
