@@ -16,18 +16,15 @@
 }
 
 .content b.b-1 {
-  background: rgba(var(--mgrgb1), 0.5); /* Group 1 color with 50% opacity */
-  padding: 0 5px;
+  background: rgba(255, 0, 0, 0.5); /* Red with 50% opacity for testing */
 }
 
 .content b.b-2 {
-  background: rgba(var(--mgrgb2), 0.5); /* Group 2 color with 50% opacity */
-  padding: 0 5px;
+  background: rgba(0, 255, 0, 0.5); /* Green with 50% opacity for testing */
 }
 
 .content b.b-3 {
-  background: rgba(var(--mgrgb3), 0.5); /* Group 3 color with 50% opacity */
-  padding: 0 5px;
+  background: rgba(0, 0, 255, 0.5); /* Blue with 50% opacity for testing */
 }
 
 .content p {
@@ -36,12 +33,12 @@
 
 .link-text {
   font-family: 'Ibarra Real Nova', serif;
-  font-size: 11px;
+  font-size: 13px;
   text-align: center;
   margin-top: 20px;
 }
 
 .link-text a {
   text-decoration: none;
-  color: #0000EE;
+  color: ;
 }
