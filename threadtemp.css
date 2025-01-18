@@ -1,9 +1,8 @@
-/* Center the entire thread-template on the page */
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
   margin: 0;
 }
 
@@ -15,12 +14,10 @@ body {
   padding: 50px;
   margin-left: 10px;
   margin-right: 10px;
-  box-sizing: border-box;
-}
-
-/* Border color for dark mode */
-html[color-mode="dark"] .thread-template {
-  border: 1px solid white; /* Change to white in dark mode */
+  box-sizing: border-box; 
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, rgba(var(--mgrgb1), 1), rgba(var(--mgrgb2), 1), rgba(var(--mgrgb3), 1)) 1;
 }
 
 .content {
