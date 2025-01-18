@@ -1,16 +1,16 @@
 /* General Template Styles */
 .thread-template {
   max-width: 520px;
-  border: 1px solid rgb(var(--mgrgb1)); /* Light mode border default */
+  border: 1px solid rgb(34, 34, 34); /* Off-black border for light mode */
   padding: 40px;
   margin: 0 auto; /* Center the template */
-  background: transparent;
+  background: transparent; /* Transparent background */
 }
 
 /* Dark Mode Support */
 html[color-mode="dark"] .thread-template {
   border-color: rgb(255, 255, 255); /* Light border for dark mode */
-  background: rgb(25, 25, 25); /* Dark background */
+  background: transparent; /* Transparent background */
 }
 
 /* Text Styling */
