@@ -15,17 +15,22 @@
   line-height: 1.6;
 }
 
+/* Remove bold styling from <b> tags */
 .content b {
-  background: rgba(var(--mgrgb1), 0.5); /* Default highlight color */
-  padding: 0 5px;
+  font-weight: normal; /* Removes the bold styling */
+  padding: 0 5px; /* Add padding for the highlight effect */
+}
+
+.content b.b-1 {
+  background: rgba(var(--mgrgb1), 0.3); /* Group 1 color with 30% opacity */
 }
 
 .content b.b-2 {
-  background: rgba(var(--mgrgb2), 0.5); /* Group 2 highlight color */
+  background: rgba(var(--mgrgb2), 0.3); /* Group 2 color with 30% opacity */
 }
 
 .content b.b-3 {
-  background: rgba(var(--mgrgb3), 0.5); /* Group 3 highlight color */
+  background: rgba(var(--mgrgb3), 0.3); /* Group 3 color with 30% opacity */
 }
 
 .content p {
@@ -41,5 +46,5 @@
 
 .link-text a {
   text-decoration: none;
-  color: ;
+  color: #000000;
 }
