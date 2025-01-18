@@ -1,138 +1,42 @@
-/* General reset */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  min-height: 100vh; /* Ensures body takes full height without scrolling */
-  padding: 20px; /* Optional padding for spacing */
-}
-
-/* Thread template container */
+/* General Template Styles */
 .thread-template {
-  background: #f9f9f9; /* Light background color */
-  width: 50%; /* Flexible width, adjust as needed */
-  max-width: 600px; /* Prevent it from growing too large */
-  border: 1px solid #ccc;
-  padding: 20px; /* Internal padding */
-  margin-top: 10px; /* Top margin */
-  margin-bottom: 10px; /* Bottom margin */
-  border-radius: 8px;
-  box-sizing: border-box; /* Ensures padding is inside the width */
+  max-width: 520px;
+  border: 1px solid rgb(var(--mgrgb1)); /* Light mode border default */
+  padding: 40px;
+  margin: 0 auto; /* Center the template */
+  background: rgb(255, 255, 255); /* Light background */
 }
 
-/* Content section */
-.content {
-  font-family: 'Libre Baskerville', serif;
+/* Dark Mode Support */
+html[color-mode="dark"] .thread-template {
+  border-color: rgb(255, 255, 255); /* Light border for dark mode */
+  background: rgb(25, 25, 25); /* Dark background */
+}
+
+/* Text Styling */
+.thread-template .content {
+  font-family: "Libre Baskerville", serif;
   font-size: 13px;
-  line-height: 1.6;
   text-align: justify;
-  padding: 10px 0; /* Padding inside content */
+  color: rgb(var(--fontcolor)); /* Default font color variable */
 }
 
-.content b {
-  font-weight: normal;
-  background: rgba(var(--mgrgb1), 0.5);
-  padding: 0 5px;
-}
-
-/* Group 1 Highlight (first color) */
-.content .group1 {
-  background: rgba(var(--mgrgb1), 0.3); /* Group 1 color */
-  padding: 0 5px;
-}
-
-/* Group 2 Highlight (second color) */
-.content .group2 {
-  background: rgba(var(--mgrgb2), 0.3); /* Group 2 color */
-  padding: 0 5px;
-}
-
-/* Group 3 Highlight (third color) */
-.content .group3 {
-  background: rgba(var(--mgrgb3), 0.3); /* Group 3 color */
-  padding: 0 5px;
-}
-
-.content p {
-  margin-bottom: 15px;
-}
-
-/* Adjust links */
-.link-text {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 13px;
+/* Tag Styling */
+.thread-template .tag {
   text-align: center;
-  margin-top: 20px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  color: rgba(var(--mgrgb2), 0.5); /* Group color 2 at 50% opacity */
 }
 
-.link-text a {
-  text-decoration: none;
-  color: rgb(var(--mgrgb2));
-  border-bottom: 1px dashed rgba(var(--mgrgb2), 0.7); /* Dashed underline */
+/* Bold Text Styling */
+.thread-template .content b.color1 {
+  color: rgba(var(--mgrgb1), 0.5);
 }
-/* General reset */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.thread-template .content b.color2 {
+  color: rgba(var(--mgrgb2), 0.5);
 }
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  min-height: 100vh; /* Ensures body takes full height without scrolling */
-  padding: 20px; /* Optional padding for spacing */
-}
-
-/* Thread template container */
-.thread-template {
-  background: #f9f9f9; /* Light background color */
-  width: 50%; /* Flexible width, adjust as needed */
-  max-width: 600px; /* Prevent it from growing too large */
-  border: 1px solid #ccc;
-  padding: 20px; /* Internal padding */
-  margin-top: 10px; /* Top margin */
-  margin-bottom: 10px; /* Bottom margin */
-  border-radius: 8px;
-  box-sizing: border-box; /* Ensures padding is inside the width */
-}
-
-/* Content section */
-.content {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 13px;
-  line-height: 1.6;
-  text-align: justify;
-  padding: 10px 0; /* Padding inside content */
-}
-
-.content b {
-  font-weight: normal;
-  background: rgba(var(--mgrgb1), 0.5);
-  padding: 0 5px;
-}
-
-.content p {
-  margin-bottom: 15px;
-}
-
-/* Adjust links */
-.link-text {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 13px;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.link-text a {
-  text-decoration: none;
-  color: rgb(var(--mgrgb2));
-  border-bottom: 1px dashed rgba(var(--mgrgb2), 0.7); /* Dashed underline */
+.thread-template .content b.color3 {
+  color: rgba(var(--mgrgb3), 0.5);
 }
