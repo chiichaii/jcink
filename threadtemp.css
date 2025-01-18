@@ -1,36 +1,46 @@
+/* Center the entire thread-template on the page */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+}
+
 .thread-template {
-  width: 500px;
+  width: 600px;
   display: inline-block;
   border: 1px solid black;
-  padding: 50px;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding: 40px;
+  margin-left: 5px;
+  margin-right: 5px;
+  box-sizing: border-box; /* To include padding in the width calculation */
 }
 
 .content {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Libre Baskerville';
   font-size: 13px;
   text-align: justify;
   margin: 0;
   line-height: 1.6;
 }
 
-/* Remove bold styling from <b> tags */
 .content b {
-  font-weight: normal; /* Removes the bold styling */
-  padding: 0 5px; /* Add padding for the highlight effect */
+  font-weight: normal;
+  background: rgba(var(--mgrgb1), 0.5);
+  padding: 0 5px;
 }
 
 .content b.b-1 {
-  background: rgba(var(--mgrgb1), 0.3); /* Group 1 color with 30% opacity */
+  background: rgba(var(--mgrgb1), 0.3); /* Group 1 color */
 }
 
 .content b.b-2 {
-  background: rgba(var(--mgrgb2), 0.3); /* Group 2 color with 30% opacity */
+  background: rgba(var(--mgrgb2), 0.3); /* Group 2 color */
 }
 
 .content b.b-3 {
-  background: rgba(var(--mgrgb3), 0.3); /* Group 3 color with 30% opacity */
+  background: rgba(var(--mgrgb3), 0.3); /* Group 3 color */
 }
 
 .content p {
@@ -38,15 +48,14 @@
 }
 
 .link-text {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Libre Baskerville';
   font-size: 13px;
   text-align: center;
   margin-top: 20px;
 }
 
 .link-text a {
-  text-decoration: none; /* Remove default underline */
+  text-decoration: none;
+  color: rgb(var(--mgrgb2)); 
   border-bottom: 1px dashed rgba(var(--mgrgb2), 0.3); /* Dashed underline with Group 2 color */
-}
-
 }
