@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400&display=swap');
 
 .thread-template {
-  width: auto;
+  width: 300px;
   display: inline-block;
   border: 1px solid black;
   padding: 40px;
