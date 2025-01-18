@@ -2,7 +2,7 @@
 .thread-template {
   max-width: 520px;
   border: 1px solid rgb(34, 34, 34); /* Off-black border for light mode */
-  padding: 40px;
+  padding: 80px; /* Increased padding */
   margin: 0 auto; /* Center the template */
   background: transparent; /* Transparent background */
 }
