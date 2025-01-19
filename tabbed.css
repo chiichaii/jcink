@@ -76,8 +76,9 @@ input[type="checkbox"]:checked + label {
 .tab-image {
     width: 100px;
     height: 100px;
-    display: block;
-    margin-bottom: 1px; 
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 10px;  
 }
 
 .tab-content {
@@ -88,7 +89,7 @@ input[type="checkbox"]:checked + label {
     padding: 7px;
     background-color: var(--tab-content-bg);
     border: 1px solid var(--content-border);
-    margin-top: 1px; /* Small margin between content blocks */
+    margin-top: 1px;
     text-align: center;
     transition: opacity 0.5s ease, visibility 0.5s ease, margin-top 0s ease 0.5s;
     box-sizing: border-box;
