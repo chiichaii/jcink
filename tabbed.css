@@ -1,0 +1,149 @@
+:root {
+    --tab-bg: #f0f0f0;
+    --tab-hover-bg: #ddd;
+    --tab-content-bg: transparent;
+    --font-color: 0, 0, 0;
+    --border-color: #ddd;
+    --content-border: #ddd;
+    --mgrgb1: 255, 100, 100;
+    --mgrgb2: 100, 255, 100;
+    --mgrgb3: 100, 100, 255;
+}
+
+html[color-mode="dark"] {
+    --tab-bg: #333;
+    --tab-hover-bg: #555;
+    --tab-content-bg: transparent;
+    --font-color: 255, 255, 255;
+    --border-color: #666;
+    --content-border: #666;
+    --mgrgb1: 255, 100, 100;
+    --mgrgb2: 100, 255, 100;
+    --mgrgb3: 100, 100, 255;
+}
+
+.tabs-container * {
+    font-weight: 300;
+}
+
+.tabs-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px; /* Small gap between columns */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.tab-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0; /* Remove margin from columns */
+    padding: 0; /* Remove extra padding */
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(var(--font-color));
+    background-color: var(--tab-bg);
+    border: 1px solid var(--border-color);
+    margin-bottom: 1px; /* Small margin between buttons */
+    border-radius: 5px;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+    transition: background-color 1s ease, color 1s ease;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+.tab:hover {
+    background-color: var(--tab-hover-bg);
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + label {
+    background-color: var(--tab-hover-bg);
+    font-weight: bold;
+}
+
+.tab-content {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    padding: 7px;
+    background-color: var(--tab-content-bg);
+    border: 1px solid var(--content-border);
+    margin-top: 1px; /* Small margin between content blocks */
+    text-align: center;
+    transition: opacity 0.5s ease, visibility 0.5s ease, margin-top 0s ease 0.5s;
+    box-sizing: border-box;
+}
+
+.tab-content img.tab-image {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 20px auto 10px;
+}
+
+.tab-content h2 {
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: transparent;
+}
+
+.tab-column:nth-child(3n-2) .tab-content h2 {
+    background-color: rgba(var(--mgrgb1), 0.3);
+}
+
+.tab-column:nth-child(3n-1) .tab-content h2 {
+    background-color: rgba(var(--mgrgb2), 0.3);
+}
+
+.tab-column:nth-child(3n) .tab-content h2 {
+    background-color: rgba(var(--mgrgb3), 0.3);
+}
+
+input[type="checkbox"]:checked + label + .tab-content {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    margin-top: 1px; /* Keep small gap when content is shown */
+}
+
+@media (max-width: 768px) {
+    .tabs-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.code-block {
+    display: block;
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(var(--font-color));
+    background-color: rgba(211, 211, 211, 0.2);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-sizing: border-box;
+    user-select: all;
+    margin-top: 10px;
+    overflow: auto;
+    text-align: left;
+    height: 50px;
+    line-height: 1.2;
+    white-space: pre-wrap;
+}
