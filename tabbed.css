@@ -76,7 +76,7 @@ input[type="checkbox"]:checked + label {
 .tab-image {
     width: 100px;
     height: 100px;
-    object-fit: cover;
+    display: block;
     margin-bottom: 1px; 
 }
 
