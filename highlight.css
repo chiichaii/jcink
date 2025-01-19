@@ -14,14 +14,6 @@
     margin-right: auto; 
 }
 
-.thread-content p {
-    margin-bottom: 1em; 
-}
-
-.thread-content p + p {
-    margin-top: 1em; 
-}
-
 html[color-mode="light"] .thread-content {
     border: 1px solid rgba(0, 0, 0, 0.4); 
 }
