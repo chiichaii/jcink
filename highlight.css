@@ -73,11 +73,6 @@ html[color-mode="dark"] .thread-content {
 }
 
 
-p {
-    margin: 0;
-}
-
-
 .serif {
      font-family: 'Ibarra Real Nova', serif;
      font-weight: 500; 
@@ -87,12 +82,5 @@ p {
 .sans {
      font-family: 'Roboto', sans-serif;
      font-weight: 300;  
-}
-
-
-p {
-    margin-top: 2em; 
-    margin-bottom: 2em; 
-    display: block; 
 }
 
