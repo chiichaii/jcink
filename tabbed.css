@@ -73,14 +73,6 @@ input[type="checkbox"]:checked + label {
     font-weight: bold;
 }
 
-.tab-image {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    object-position: center;
-    margin-bottom: 10px;  
-}
-
 .tab-content {
     display: none;
     opacity: 0;
