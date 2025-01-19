@@ -29,7 +29,7 @@ html[color-mode="dark"] {
 .tabs-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1px; /* Small gap between columns */
+    gap: 1px; 
     width: 100%;
     margin: 0 auto;
 }
@@ -39,8 +39,8 @@ html[color-mode="dark"] {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin: 0; /* Remove margin from columns */
-    padding: 0; /* Remove extra padding */
+    margin: 0;
+    padding: 0; 
 }
 
 .tab {
@@ -50,7 +50,7 @@ html[color-mode="dark"] {
     color: rgb(var(--font-color));
     background-color: var(--tab-bg);
     border: 1px solid var(--border-color);
-    margin-bottom: 1px; /* Small margin between buttons */
+    margin-bottom: 1px; 
     border-radius: 5px;
     white-space: nowrap;
     width: 100%;
@@ -81,7 +81,7 @@ input[type="checkbox"]:checked + label {
     padding: 7px;
     background-color: var(--tab-content-bg);
     border: 1px solid var(--content-border);
-    margin-top: 1px; /* Small margin between content blocks */
+    margin-top: 1px; 
     text-align: center;
     transition: opacity 0.5s ease, visibility 0.5s ease, margin-top 0s ease 0.5s;
     box-sizing: border-box;
@@ -92,6 +92,8 @@ input[type="checkbox"]:checked + label {
     height: 100px;
     display: block;
     margin: 20px auto 10px;
+    object-fit: cover; 
+    object-position: center;
 }
 
 .tab-content h2 {
@@ -117,7 +119,7 @@ input[type="checkbox"]:checked + label + .tab-content {
     display: block;
     opacity: 1;
     visibility: visible;
-    margin-top: 1px; /* Keep small gap when content is shown */
+    margin-top: 1px; 
 }
 
 @media (max-width: 768px) {
