@@ -75,5 +75,7 @@ html[color-mode="dark"] .thread-content {
 .sans {
      font-family: 'Roboto', sans-serif;
      font-weight: 300;  
+     line-height: 1.6;
+     margin: 0;  
 }
 
