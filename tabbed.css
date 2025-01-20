@@ -81,48 +81,40 @@ input[type="checkbox"]:checked + label + .tab-content {
     box-sizing: border-box;
 }
 
-.tab-content img.tab-image {
-    width: 100px;
-    height: 100px;
-    display: block;
-    margin: 20px auto 10px;
-    object-fit: cover;
-}
-
 .tab-column:nth-child(3n-2) label.tab {
-    background-color: rgba(var(--mgrgb1), 0.3);
+    background-color: rgba(var(--mgrgb1), 0.3) !important;
 }
 
 .tab-column:nth-child(3n-1) label.tab {
-    background-color: rgba(var(--mgrgb2), 0.3);
+    background-color: rgba(var(--mgrgb2), 0.3) !important;
 }
 
 .tab-column:nth-child(3n) label.tab {
-    background-color: rgba(var(--mgrgb3), 0.3);
+    background-color: rgba(var(--mgrgb3), 0.3) !important;
 }
 
 .tab-column:nth-child(3n-2) label.tab:hover {
-    background-color: rgba(var(--mgrgb1), 0.5);
+    background-color: rgba(var(--mgrgb1), 0.5) !important;
 }
 
 .tab-column:nth-child(3n-1) label.tab:hover {
-    background-color: rgba(var(--mgrgb2), 0.5);
+    background-color: rgba(var(--mgrgb2), 0.5) !important;
 }
 
 .tab-column:nth-child(3n) label.tab:hover {
-    background-color: rgba(var(--mgrgb3), 0.5);
+    background-color: rgba(var(--mgrgb3), 0.5) !important;
 }
 
 html[color-mode="dark"] .tab-column:nth-child(3n-2) label.tab {
-    background-color: rgba(var(--mgrgb1), 0.3);
+    background-color: rgba(var(--mgrgb1), 0.3) !important;
 }
 
 html[color-mode="dark"] .tab-column:nth-child(3n-1) label.tab {
-    background-color: rgba(var(--mgrgb2), 0.3);
+    background-color: rgba(var(--mgrgb2), 0.3) !important;
 }
 
 html[color-mode="dark"] .tab-column:nth-child(3n) label.tab {
-    background-color: rgba(var(--mgrgb3), 0.3);
+    background-color: rgba(var(--mgrgb3), 0.3) !important;
 }
 
 .tab-column:nth-child(3n-2) .tab-content {
