@@ -117,7 +117,7 @@ input[type="checkbox"]:checked + label {
 }
 
 .tabs-container .tab-column .tab-content {
-    font-size: inherit;
+    font-size: 11px;
 }
 
 input[type="checkbox"]:checked + label + .tab-content {
