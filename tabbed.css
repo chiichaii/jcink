@@ -100,7 +100,6 @@ input[type="checkbox"]:checked + label {
     padding: 5px 5px 2.5px 5px;
     border-radius: 5px;
     display: inline-block;
-    font-weight: 300;
 }
 
 .tab-column:nth-child(3n-2) .highlighted-text {
