@@ -1,19 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@500&display=swap');
 
-.thread-content {
-    width: 70% !important;
-    font-family: 'Ibarra Real Nova', serif;
-    font-size: 14.5px;
-    line-height: 1.6;  
-    text-align: justify;
-    border: 1px solid black; 
-    padding: 60px; 
-    padding-bottom: 50px;  
-    margin: 0px;
-    white-space: pre-line; 
-}
-
 html[color-mode="light"] .thread-content {
     border: 1px solid rgba(0, 0, 0, 0.4); 
 }
@@ -21,7 +8,6 @@ html[color-mode="light"] .thread-content {
 html[color-mode="dark"] .thread-content {
     border: 1px solid rgba(191, 191, 191, 0.4); 
 }
-
 
 .partner-tag {
     border-radius: 8px;
@@ -78,8 +64,16 @@ html[color-mode="dark"] .thread-content {
      margin: 0;  
 }
 
-body, html {
-    margin: 0;
-    padding: 0;
+.thread-content {
+    width: 70% !important;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 14.5px;
+    line-height: 1.6;  
+    text-align: justify;
+    border: 1px solid black; 
+    padding: 60px; 
+    padding-bottom: 50px;  
+    margin: 0px;
+    white-space: pre-line; 
 }
 
