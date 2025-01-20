@@ -87,10 +87,6 @@ input[type="checkbox"]:checked + label {
     box-sizing: border-box;
 }
 
-.tabs-container .tab-column .tab-content {
-    font-size: 11px !important;
-}
-
 .tab-content img.tab-image {
     width: 100px;
     height: 100px;
@@ -118,6 +114,10 @@ input[type="checkbox"]:checked + label {
 
 .tab-column:nth-child(3n) .highlighted-text {
     background-color: rgba(var(--mgrgb3), 0.3);
+}
+
+.tabs-container .tab-column .tab-content {
+    font-size: inherit;
 }
 
 input[type="checkbox"]:checked + label + .tab-content {
