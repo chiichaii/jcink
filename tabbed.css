@@ -78,7 +78,7 @@ input[type="checkbox"]:checked + label {
     opacity: 0;
     visibility: hidden;
     width: 100%;
-    padding: 7px;
+    padding: 0px 7px 0px 7px;
     background-color: var(--tab-content-bg);
     border: 1px solid var(--content-border);
     margin-top: 1px; 
