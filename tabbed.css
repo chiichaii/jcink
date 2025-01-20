@@ -85,6 +85,7 @@ input[type="checkbox"]:checked + label {
     text-align: center;
     transition: opacity 0.5s ease, visibility 0.5s ease, margin-top 0s ease 0.5s;
     box-sizing: border-box;
+    font-size: 11px !important;
 }
 
 .tab-content img.tab-image {
@@ -113,10 +114,6 @@ input[type="checkbox"]:checked + label {
 
 .tab-column:nth-child(3n) .tab-content h2 {
     background-color: rgba(var(--mgrgb3), 0.3);
-}
-
-.tab-content {
-    font-size: 11px; 
 }
 
 input[type="checkbox"]:checked + label + .tab-content {
