@@ -70,7 +70,7 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:checked + label {
     background-color: var(--tab-hover-bg);
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .tab-content {
