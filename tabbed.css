@@ -102,16 +102,20 @@ input[type="checkbox"]:checked + label {
     display: inline-block;
 }
 
-.tab-column:nth-child(3n-2) .highlighted-text {
-    background-color: rgba(var(--mgrgb1), 0.3);
+.tab-column:nth-child(1) .highlighted-text {
+    background-color: rgba(var(--mgrgb1), 0.3); /* First tab column */
 }
 
-.tab-column:nth-child(3n-1) .highlighted-text {
-    background-color: rgba(var(--mgrgb2), 0.3);
+.tab-column:nth-child(2) .highlighted-text {
+    background-color: rgba(var(--mgrgb2), 0.3); /* Second tab column */
 }
 
-.tab-column:nth-child(3n) .highlighted-text {
-    background-color: rgba(var(--mgrgb3), 0.3);
+.tab-column:nth-child(3) .highlighted-text {
+    background-color: rgba(var(--mgrgb3), 0.3); /* Third tab column */
+}
+
+.tab-column:nth-child(4) .highlighted-text {
+    background-color: rgba(var(--mgrgb1), 0.3); /* Fourth tab column */
 }
 
 .tabs-container .tab-column .tab-content {
