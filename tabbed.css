@@ -87,10 +87,6 @@ input[type="checkbox"]:checked + label {
     box-sizing: border-box;
 }
 
-.tabs-container .tab-column .tab-content {
-    font-size: 11px !important;
-}
-
 .tab-content img.tab-image {
     width: 100px;
     height: 100px;
@@ -99,24 +95,27 @@ input[type="checkbox"]:checked + label {
     object-fit: cover;
 }
 
-.tab-content h2 {
+.highlighted-text {
     font-size: 11px;
-    padding: 5px 5px 2.5px 5px; 
+    padding: 5px 5px 2.5px 5px;
     border-radius: 5px;
     display: inline-block;
-    background-color: transparent;
 }
 
-.tab-column:nth-child(3n-2) .tab-content h2 {
+.tab-column:nth-child(3n-2) .highlighted-text {
     background-color: rgba(var(--mgrgb1), 0.3);
 }
 
-.tab-column:nth-child(3n-1) .tab-content h2 {
+.tab-column:nth-child(3n-1) .highlighted-text {
     background-color: rgba(var(--mgrgb2), 0.3);
 }
 
-.tab-column:nth-child(3n) .tab-content h2 {
+.tab-column:nth-child(3n) .highlighted-text {
     background-color: rgba(var(--mgrgb3), 0.3);
+}
+
+.tabs-container .tab-column .tab-content {
+    font-size: 11px;
 }
 
 input[type="checkbox"]:checked + label + .tab-content {
@@ -124,6 +123,30 @@ input[type="checkbox"]:checked + label + .tab-content {
     opacity: 1;
     visibility: visible;
     margin-top: 1px; 
+}
+
+.tab-column:nth-child(3n-2) label.tab {
+    background-color: rgba(var(--mgrgb1), 0.3);
+}
+
+.tab-column:nth-child(3n-1) label.tab {
+    background-color: rgba(var(--mgrgb2), 0.3);
+}
+
+.tab-column:nth-child(3n) label.tab {
+    background-color: rgba(var(--mgrgb3), 0.3);
+}
+
+.tab-column:nth-child(3n-2) label.tab:hover {
+    background-color: rgba(var(--mgrgb1), 0.5);
+}
+
+.tab-column:nth-child(3n-1) label.tab:hover {
+    background-color: rgba(var(--mgrgb2), 0.5);
+}
+
+.tab-column:nth-child(3n) label.tab:hover {
+    background-color: rgba(var(--mgrgb3), 0.5);
 }
 
 @media (max-width: 768px) {
