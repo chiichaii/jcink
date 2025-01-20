@@ -153,25 +153,3 @@ input[type="checkbox"]:checked + label + .tab-content {
     line-height: 1.2;
     white-space: pre-wrap;
 }
-
-.url-button {
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 8px 15px;
-    margin: 5px;
-    width: 150px; /* Fixed width */
-    cursor: pointer;
-    text-align: center;
-    font-weight: normal;
-    transition: background-color 0.3s ease;
-}
-
-.url-button:hover {
-    opacity: 1; /* Make it fully opaque on hover */
-}
-
-.url-button:focus {
-    outline: none;
-}
-
