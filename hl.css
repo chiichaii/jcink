@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@500&display=swap');
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.text-container {
+  font-family: 'Ibarra Real Nova', serif;
+  font-weight: 500;
+  line-height: 1.6;
+  text-align: justify;
+  width: 70%;
+  padding: 50px 70px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.sans-serif {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.partner-tag {
+  border-radius: 8px;
+  padding: 4px 8px;
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  transition: filter 0.5s ease;
+}
+
+.partner-tag:hover {
+  filter: blur(1px);
+}
+
+.hl {
+  border-radius: 8px;
+  padding: 4px 8px 2px 8px;
+  display: inline;
+  transition: background-color 0.7s ease, filter 0.7s ease; 
+}
+
+.one {
+  background: rgba(var(--mgrgb1), 0.3);
+}
+
+.two {
+  background: rgba(var(--mgrgb2), 0.3);
+}
+
+.three {
+  background: rgba(var(--mgrgb3), 0.3);
+}
+
+.hl:hover {
+  filter: brightness(1.3); 
+}
+
+html[color-mode="dark"] .text-container {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+html[color-mode="light"] .text-container {
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+html[color-mode="dark"] .partner-tag {
+  color: rgba(255, 255, 255, 0.7); 
+}
+
+html[color-mode="light"] .partner-tag {
+  color: rgba(0, 0, 0, 0.7); 
+}
