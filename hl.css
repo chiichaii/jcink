@@ -11,6 +11,7 @@
 .text-container {
   font-family: 'Ibarra Real Nova', serif;
   font-weight: 500;
+  font-size: 14.5px;
   line-height: 1.6;
   text-align: justify;
   width: 70%;
@@ -24,6 +25,7 @@
 }
 
 .partner-tag {
+  font-size: 14.5px;
   border-radius: 8px;
   padding: 4px 8px;
   display: block;
