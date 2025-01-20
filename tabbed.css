@@ -96,6 +96,7 @@ input[type="checkbox"]:checked + label {
 }
 
 .tab-content h2 {
+    font-size: 11px;
     padding: 5px;
     border-radius: 5px;
     display: inline-block;
@@ -112,6 +113,10 @@ input[type="checkbox"]:checked + label {
 
 .tab-column:nth-child(3n) .tab-content h2 {
     background-color: rgba(var(--mgrgb3), 0.3);
+}
+
+.tab-content {
+    font-size: 11px; 
 }
 
 input[type="checkbox"]:checked + label + .tab-content {
