@@ -45,7 +45,7 @@ html[color-mode="dark"] .thread-content {
 
 
 .mgcolor1, .mgcolor2, .mgcolor3 {
-    background: rgba(var(--mgrgb1), 0.3); 
+    background: rgba(var(--mgrgb1), 0.2); 
     padding: 0 2px; 
     display: inline;
     line-height: 1.6; 
@@ -54,15 +54,15 @@ html[color-mode="dark"] .thread-content {
 
 
 .mgcolor1 {
-    background: rgba(var(--mgrgb1), 0.3);
+    background: rgba(var(--mgrgb1), 0.2);
 }
 
 .mgcolor2 {
-    background: rgba(var(--mgrgb2), 0.3);
+    background: rgba(var(--mgrgb2), 0.2);
 }
 
 .mgcolor3 {
-    background: rgba(var(--mgrgb3), 0.3);
+    background: rgba(var(--mgrgb3), 0.2);
 }
 
 
