@@ -18,14 +18,10 @@ html[color-mode="dark"] {
     --tab-hover-bg: #555;
 }
 
-.tabs-container * {
-    font-weight: 300;
-}
-
 .tabs-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1px; 
+    gap: 1px;
     width: 100%;
     margin: 0 auto;
 }
@@ -36,7 +32,7 @@ html[color-mode="dark"] {
     align-items: center;
     width: 100%;
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
 
 .tab {
@@ -46,7 +42,7 @@ html[color-mode="dark"] {
     color: rgb(var(--font-color));
     background-color: var(--tab-bg);
     border: 1px solid var(--border-color);
-    margin-bottom: 1px; 
+    margin-bottom: 1px;
     border-radius: 5px;
     white-space: nowrap;
     width: 100%;
@@ -64,9 +60,11 @@ input[type="checkbox"] {
     display: none;
 }
 
-input[type="checkbox"]:checked + label {
-    background-color: var(--tab-hover-bg);
-    font-weight: normal !important;
+input[type="checkbox"]:checked + label + .tab-content {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    margin-top: 1px;
 }
 
 .tab-content {
@@ -77,7 +75,7 @@ input[type="checkbox"]:checked + label {
     padding: 0px 7px 0px 7px;
     background-color: transparent;
     border: 1px solid var(--border-color);
-    margin-top: 1px; 
+    margin-top: 1px;
     text-align: center;
     transition: opacity 0.5s ease, visibility 0.5s ease, margin-top 0s ease 0.5s;
     box-sizing: border-box;
@@ -91,36 +89,6 @@ input[type="checkbox"]:checked + label {
     object-fit: cover;
 }
 
-.highlighted-text {
-    font-size: 11px;
-    padding: 5px 5px 2.5px 5px;
-    border-radius: 5px;
-    display: inline-block;
-}
-
-.tab-column:nth-child(3n-2) .highlighted-text {
-    background-color: rgba(var(--mgrgb1), 0.3);
-}
-
-.tab-column:nth-child(3n-1) .highlighted-text {
-    background-color: rgba(var(--mgrgb2), 0.3);
-}
-
-.tab-column:nth-child(3n) .highlighted-text {
-    background-color: rgba(var(--mgrgb3), 0.3);
-}
-
-.tabs-container .tab-column .tab-content {
-    font-size: 11px;
-}
-
-input[type="checkbox"]:checked + label + .tab-content {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-    margin-top: 1px; 
-}
-
 .tab-column:nth-child(3n-2) label.tab {
     background-color: rgba(var(--mgrgb1), 0.3);
 }
@@ -133,20 +101,6 @@ input[type="checkbox"]:checked + label + .tab-content {
     background-color: rgba(var(--mgrgb3), 0.3);
 }
 
-/* Ensure label background matches tab color */
-.tab-column:nth-child(3n-2) label.tab {
-    background-color: rgba(var(--mgrgb1), 0.3);
-}
-
-.tab-column:nth-child(3n-1) label.tab {
-    background-color: rgba(var(--mgrgb2), 0.3);
-}
-
-.tab-column:nth-child(3n) label.tab {
-    background-color: rgba(var(--mgrgb3), 0.3);
-}
-
-/* Hover effect for tab labels */
 .tab-column:nth-child(3n-2) label.tab:hover {
     background-color: rgba(var(--mgrgb1), 0.5);
 }
@@ -157,6 +111,30 @@ input[type="checkbox"]:checked + label + .tab-content {
 
 .tab-column:nth-child(3n) label.tab:hover {
     background-color: rgba(var(--mgrgb3), 0.5);
+}
+
+html[color-mode="dark"] .tab-column:nth-child(3n-2) label.tab {
+    background-color: rgba(var(--mgrgb1), 0.3);
+}
+
+html[color-mode="dark"] .tab-column:nth-child(3n-1) label.tab {
+    background-color: rgba(var(--mgrgb2), 0.3);
+}
+
+html[color-mode="dark"] .tab-column:nth-child(3n) label.tab {
+    background-color: rgba(var(--mgrgb3), 0.3);
+}
+
+.tab-column:nth-child(3n-2) .tab-content {
+    font-size: 11px;
+}
+
+.tab-column:nth-child(3n-1) .tab-content {
+    font-size: 11px;
+}
+
+.tab-column:nth-child(3n) .tab-content {
+    font-size: 11px;
 }
 
 @media (max-width: 768px) {
