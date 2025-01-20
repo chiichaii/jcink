@@ -1,25 +1,21 @@
 :root {
-    --tab-bg: #f0f0f0;
-    --tab-hover-bg: #ddd;
-    --tab-content-bg: transparent;
-    --font-color: 0, 0, 0;
-    --border-color: #ddd;
-    --content-border: #ddd;
     --mgrgb1: 255, 100, 100;
     --mgrgb2: 100, 255, 100;
     --mgrgb3: 100, 100, 255;
+    --font-color: 0, 0, 0;
+    --border-color: #ddd;
+    --tab-bg: #f0f0f0;
+    --tab-hover-bg: #ddd;
 }
 
 html[color-mode="dark"] {
-    --tab-bg: #333;
-    --tab-hover-bg: #555;
-    --tab-content-bg: transparent;
-    --font-color: 255, 255, 255;
-    --border-color: #666;
-    --content-border: #666;
     --mgrgb1: 255, 100, 100;
     --mgrgb2: 100, 255, 100;
     --mgrgb3: 100, 100, 255;
+    --font-color: 255, 255, 255;
+    --border-color: #666;
+    --tab-bg: #333;
+    --tab-hover-bg: #555;
 }
 
 .tabs-container * {
@@ -79,8 +75,8 @@ input[type="checkbox"]:checked + label {
     visibility: hidden;
     width: 100%;
     padding: 0px 7px 0px 7px;
-    background-color: var(--tab-content-bg);
-    border: 1px solid var(--content-border);
+    background-color: transparent;
+    border: 1px solid var(--border-color);
     margin-top: 1px; 
     text-align: center;
     transition: opacity 0.5s ease, visibility 0.5s ease, margin-top 0s ease 0.5s;
@@ -137,6 +133,20 @@ input[type="checkbox"]:checked + label + .tab-content {
     background-color: rgba(var(--mgrgb3), 0.3);
 }
 
+/* Ensure label background matches tab color */
+.tab-column:nth-child(3n-2) label.tab {
+    background-color: rgba(var(--mgrgb1), 0.3);
+}
+
+.tab-column:nth-child(3n-1) label.tab {
+    background-color: rgba(var(--mgrgb2), 0.3);
+}
+
+.tab-column:nth-child(3n) label.tab {
+    background-color: rgba(var(--mgrgb3), 0.3);
+}
+
+/* Hover effect for tab labels */
 .tab-column:nth-child(3n-2) label.tab:hover {
     background-color: rgba(var(--mgrgb1), 0.5);
 }
