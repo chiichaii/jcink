@@ -55,6 +55,16 @@
     font-weight: 300;
   }
 
+.rounded {
+    --border-radius: 8px;
+    border-radius: var(--border-radius);
+}
+
+/* Optional sizes */
+.rounded-sm { --border-radius: 4px; }
+.rounded-lg { --border-radius: 12px; }
+.rounded-full { --border-radius: 999px; }
+
   .hl {
     border-radius: 8px;
     padding: 4px 8px 2px 8px;
