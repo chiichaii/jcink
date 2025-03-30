@@ -56,7 +56,7 @@
   }
 
 .rounded {
-    --border-radius: 8px;
+    --border-radius: 25%;
     border-radius: var(--border-radius);
 }
 
