@@ -1,17 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@500&display=swap');
 
-/* Defining Light & Dark Mode Variables */
-body {
-  --bor: rgba(0, 0, 0, 0.5);   /* Light mode: Black border */
-  --textcolor: black;          /* Light mode: Black text */
-}
-
-body[color-mode="dark"] {
-  --bor: rgba(255, 255, 255, 0.5); /* Dark mode: White border */
-  --textcolor: white;              /* Dark mode: White text */
-}
-
 .content-wrapper {
   display: flex;
   justify-content: center;
@@ -19,17 +8,17 @@ body[color-mode="dark"] {
 }
 
 .text-container {
-  font-family: var(--bodyfont, 'Ibarra Real Nova', serif);
+  font-family: 'Ibarra Real Nova', serif;
   font-weight: 500;
   line-height: 1.6;
   text-align: justify;
   width: 50%;
   padding: 60px 70px 50px 70px;
-  border: 1px solid var(--bor);
+  border: 1px solid rgba(var(--accent1), 1)
 }
 
 .sans-serif {
-  font-family: var(--sansfont, 'Roboto', sans-serif);
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
 
@@ -39,7 +28,7 @@ body[color-mode="dark"] {
   display: block;
   margin-top: 30px;
   text-align: center;
-  color: var(--textcolor);
+  color: rgba(var(--accent2), 0.7);
   transition: filter 0.5s ease;
 }
 
@@ -51,11 +40,11 @@ body[color-mode="dark"] {
   border-radius: 8px;
   padding: 4px 8px 2px 8px;
   display: inline;
-  transition: background-color 0.7s ease, filter 0.7s ease;
+  transition: background-color 0.7s ease, filter 0.7s ease; 
 }
 
 .hl:hover {
-  filter: brightness(1.3);
+  filter: brightness(1.3); 
 }
 
 .one {
