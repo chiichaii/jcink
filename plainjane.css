@@ -4,7 +4,7 @@
 /* Default (Light Mode) */
 :root {
   --text-color: black;
-  --bg-color: white;
+  --bg-color: transparent;
   --border-color: rgba(var(--accent1), 0.5);
   --highlight-opacity: 0.3;
 }
@@ -12,7 +12,7 @@
 /* Dark Mode */
 html[color-mode="dark"] {
   --text-color: white;
-  --bg-color: black;
+  --bg-color: transparent;
   --border-color: rgba(var(--accent1), 0.5);
   --highlight-opacity: 0.5;
 }
