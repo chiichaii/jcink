@@ -8,7 +8,7 @@
 }
 
 .text-container {
-  font-family: 'Ibarra Real Nova', serif;
+  font-family: var(--bodyfont, 'Ibarra Real Nova', serif);
   font-weight: 500;
   line-height: 1.6;
   text-align: justify;
@@ -18,7 +18,7 @@
 }
 
 .sans-serif {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--sansfont, 'Roboto', sans-serif);
   font-weight: 300;
 }
 
@@ -28,7 +28,7 @@
   display: block;
   margin-top: 30px;
   text-align: center;
-  color: var(--textcolor); /* Uses site's text color variable */
+  color: var(--textcolor);
   transition: filter 0.5s ease;
 }
 
@@ -40,11 +40,11 @@
   border-radius: 8px;
   padding: 4px 8px 2px 8px;
   display: inline;
-  transition: background-color 0.7s ease, filter 0.7s ease; 
+  transition: background-color 0.7s ease, filter 0.7s ease;
 }
 
 .hl:hover {
-  filter: brightness(1.3); 
+  filter: brightness(1.3);
 }
 
 .one {
