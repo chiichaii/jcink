@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@500&display=swap');
 
+/* Light Mode (Default) */
+body {
+  --bor: rgba(0, 0, 0, 0.5);   /* Black border */
+  --textcolor: black;          /* Black text */
+}
+
+/* Dark Mode */
+body.darkmode {
+  --bor: rgba(255, 255, 255, 0.5); /* White border */
+  --textcolor: white;              /* White text */
+}
+
 .content-wrapper {
   display: flex;
   justify-content: center;
