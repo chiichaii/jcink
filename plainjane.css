@@ -7,6 +7,14 @@
   align-items: center;
 }
 
+.line {
+  width: 30%;
+  margin: 0 auto;
+  border-top: 1px solid var(--bor);
+  opacity: 0.5;
+  padding: 5px 0; 
+}
+
 .text-container {
   font-family: 'Ibarra Real Nova', serif;
   font-weight: 500;
