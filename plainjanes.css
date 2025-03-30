@@ -7,8 +7,8 @@
   align-items: center;
 }
 
-body { --text-container: #000; }
-body.darkmode { --text-container: #fff; }
+.body { --text-container: #000; }
+.body.darkmode { --text-container: #fff; }
 
 .text-container {
   font-family: 'Ibarra Real Nova', serif;
