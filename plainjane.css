@@ -9,13 +9,12 @@
 
 .text-container {
   font-family: 'Ibarra Real Nova', serif;
-  font-size: 20px !important;
   font-weight: 500;
   line-height: 1.6;
   text-align: justify;
   width: 50%;
   padding: 60px 70px 50px 70px;
-  border: 1px solid rgba(var(--accent1), 0.5);
+  border: 1px solid red !important;
 }
 
 .sans-serif {
@@ -44,6 +43,10 @@
   transition: background-color 0.7s ease, filter 0.7s ease; 
 }
 
+.hl:hover {
+  filter: brightness(1.3); 
+}
+
 .one {
   background: rgba(var(--accent1), 0.3);
 }
@@ -54,8 +57,4 @@
 
 .three {
   background: rgba(var(--accent3), 0.3);
-}
-
-.hl:hover {
-  filter: brightness(1.3); 
 }
