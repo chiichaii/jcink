@@ -14,7 +14,9 @@
   text-align: justify;
   width: 50%;
   padding: 60px 70px 50px 70px;
-  border: 1px solid red !important;
+  border: 1px solid transparent; 
+  border-color: rgba(var(--accent1), 0.5); 
+
 }
 
 .sans-serif {
