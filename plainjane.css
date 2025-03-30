@@ -59,18 +59,18 @@
   filter: brightness(1.3); 
 }
 
-html[color-mode="dark"] .text-container {
-  border-color: rgba(255, 255, 255, 0.5);
-}
-
-html[color-mode="light"] .text-container {
+body.lightmode .text-container {
   border-color: rgba(0, 0, 0, 0.5);
 }
 
-html[color-mode="dark"] .partner-tag {
-  color: rgba(255, 255, 255, 0.7); 
+body.lightmode .partner-tag {
+  color: rgba(0, 0, 0, 0.7); 
 }
 
-html[color-mode="light"] .partner-tag {
-  color: rgba(0, 0, 0, 0.7); 
+body.darkmode .text-container {
+  border-color: var(--bor2);
+}
+
+body.darkmode .partner-tag {
+  color: var(--textcolor); 
 }
