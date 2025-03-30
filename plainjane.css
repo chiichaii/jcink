@@ -29,7 +29,7 @@ html[color-mode="dark"] {
   line-height: 1.6;
   text-align: justify;
   width: 50%;
-  padding: 60px 70px 50px;
+  padding: 60px 70px 70px 50px;
   border: 1px solid var(--border-color);
   color: var(--text-color);
   background: var(--bg-color);
