@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@500&display=swap');
 
-/* Light Mode (Default) */
+/* Defining Light & Dark Mode Variables */
 body {
-  --bor: rgba(0, 0, 0, 0.5);   /* Black border */
-  --textcolor: black;          /* Black text */
+  --bor: rgba(0, 0, 0, 0.5);   /* Light mode: Black border */
+  --textcolor: black;          /* Light mode: Black text */
 }
 
-/* Dark Mode */
-body.darkmode {
-  --bor: rgba(255, 255, 255, 0.5); /* White border */
-  --textcolor: white;              /* White text */
+body[color-mode="dark"] {
+  --bor: rgba(255, 255, 255, 0.5); /* Dark mode: White border */
+  --textcolor: white;              /* Dark mode: White text */
 }
 
 .content-wrapper {
