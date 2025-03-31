@@ -1,0 +1,48 @@
+      :root {
+      --accent1: 255, 100, 100; 
+      --accent2: 100, 200, 100; 
+      --accent3: 100, 100, 255; 
+      --op3: 1;
+    }
+
+    body.darkmode {
+      --op3: 0.65; 
+    }
+
+    .content-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+.img-container {
+  width: fit-content;
+  border: 7px solid transparent;
+  border-image: 
+    linear-gradient(
+      90deg, 
+      rgba(var(--accent1), var(--op3)),
+      rgba(var(--accent2), var(--op3)),
+      rgba(var(--accent3), var(--op3))
+    ) 1;
+  border-radius: 8px;
+  display: inline-flex;
+  justify-content: center;
+  background: transparent !important;
+  padding: 50px; /* Inner spacing */
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 250px); /* Fixed 250px squares */
+  gap: 10px; /* Space between images */
+  background: transparent;
+}
+
+.image-grid img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover; /* Ensures square crop */
+  display: block; /* Removes inline spacing */
+}
