@@ -1,0 +1,58 @@
+  .button-container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 14px;
+    text-align: center;
+    font-size: 0;
+  }
+
+  .button {
+    font-family: var(--serif);
+    font-size: 12px;
+    padding: 5px 10px;
+    margin: 0 8px 8px 0;
+    border: 1px solid var(--bor);
+    border-radius: 9px;
+    transform: translateY(-2px);
+    box-shadow: 2px 2px 0 0 var(--bor);
+    display: inline-block;
+    white-space: nowrap;
+    transition: all 0.15s ease;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    filter: brightness(1.2);
+    transform: translateY(0);
+    box-shadow: 1px 1px 0 0 var(--bor);
+  }
+
+  .button-transparent {
+    background: transparent;
+    color: var(--text);
+  }
+
+  .button-accent1 {
+    background: rgba(var(--accent1), 0.4);
+    color: var(--text-invert);
+  }
+
+  .button-accent2 {
+    background: rgba(var(--accent2), 0.4);
+    color: var(--text-invert);
+  }
+
+  .button-accent3 {
+    background: rgba(var(--accent3), 0.4);
+    color: var(--text-invert);
+  }
+
+  .button-gradient {
+    background: linear-gradient(
+      135deg,
+      rgba(var(--accent1), 0.4),
+      rgba(var(--accent2), 0.4),
+      rgba(var(--accent3), 0.4)
+    );
+    color: var(--text-invert);
+  }
